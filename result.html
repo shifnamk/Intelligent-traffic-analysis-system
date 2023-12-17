@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Analyzer - Result Display</title>
+  <link rel="stylesheet" href="/static/css/resultstyle.css">
+</head>
+
+<body>
+<video id="video-background" autoplay muted loop>
+        <source src="/static/video (2160p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  <div class="container">
+    <header>
+      <h1>Traffic Insights Hub</h1>
+    </header>
+    <main>
+      <div id="result" class="result-container">
+        <h2 id="result">{{prediction_text}}</h2>
+      </div>
+      <a href="{{ url_for('home') }}" class="back-link">Back to Upload</a>
+    </main>
+  </div>
+</body>
+
+</html>
